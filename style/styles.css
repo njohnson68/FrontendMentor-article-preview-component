@@ -1,0 +1,85 @@
+@import url(https://fonts.google.com/specimen/Manrope);
+
+body{
+    font-family: "Manrope", sans-serif;
+    background-color: hsl(210, 46%, 95%);
+}
+
+.white-box{
+    background-color: white;
+    max-width: 30em;
+    height: 18em;
+    font-size: 13px;
+}
+
+.drawers{
+    max-width: 30em;
+    height: 14.65em;
+}
+
+.shift{
+    color: hsl(217, 19%, 35%);
+    margin: 20px 50px 10px 20px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.25;
+}
+
+.ever{
+    font-size: 13px;
+    color: hsl(212, 23%, 69%);
+    margin: 10px 50px 10px 20px;
+    line-height: 1.25;
+
+}
+
+.image-and-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%,-50%);
+}
+
+.michelle-profile{
+    max-width: 3em;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+
+.name{
+    color:  hsl(217, 19%, 35%);
+}
+
+.date{
+    color: hsl(210, 46%, 95%);
+}
+
+.name-and-date{
+    margin-left: 70px;
+    margin-top: -35px;
+    line-height: 1.25;
+}
+
+.share-button{
+    border-radius: 50%;
+    padding: .5rem;
+    border: none;
+    margin-top: -30px;
+    margin-right: 20px;
+}
+
+.share-button:hover{
+    background-color: hsl(214, 17%, 51%);
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
