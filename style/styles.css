@@ -3,18 +3,26 @@
 body{
     font-family: "Manrope", sans-serif;
     background-color: hsl(210, 46%, 95%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
 }
 
 .white-box{
     background-color: white;
-    max-width: 30em;
-    height: 18em;
     font-size: 13px;
 }
 
 .drawers{
-    max-width: 30em;
-    height: 14.65em;
+    object-fit: cover;
+
+}
+
+.image-and-box{
+    max-width: 30rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .shift{
@@ -33,20 +41,6 @@ body{
 
 }
 
-.image-and-box{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%,-50%);
-}
-
-.michelle-profile{
-    max-width: 3em;
-    border-radius: 50%;
-    margin-left: 20px;
-}
-
 .name{
     color:  hsl(217, 19%, 35%);
 }
@@ -55,10 +49,10 @@ body{
     color: hsl(210, 46%, 95%);
 }
 
-.name-and-date{
-    margin-left: 70px;
-    margin-top: -35px;
-    line-height: 1.25;
+.michelle-profile{
+    max-width: 3em;
+    border-radius: 50%;
+    margin-left: 20px;
 }
 
 .share-button{
@@ -71,6 +65,48 @@ body{
 
 .share-button:hover{
     background-color: hsl(214, 17%, 51%);
+    cursor: pointer;
+}
+
+.share-button svg{
+    fill: #6E8098;
+}
+
+.share-button:hover svg {
+    fill: hsl(210, 46%, 95%);
+}
+
+.share-popup{
+    background-color: hsl(217, 19%, 35%);
+    width: max-content;
+    padding: 1rem 2rem;
+    display: none;
+    position: absolute;
+    left: 0;
+    transform: translateY(100%);
+    transform-origin: top;
+    transition: transform 300ms;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+}
+
+.share-popup p {
+    color: hsl(212, 23%, 69%);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+
+.social-icons{
+    list-style: none;
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+}
+
+.social-icons li {
+    cursor: pointer;
 }
 
 .attribution { 
@@ -82,4 +118,26 @@ body{
 }
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+}
+
+.name-and-date{
+    margin-left: 70px;
+    margin-top: -35px;
+    line-height: 1.25;
+}
+
+/* desktop */
+@media (min-width: 37.5rem){
+
+.drawers{
+    max-width: 17rem;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+.image-and-box{
+    max-width: 45rem;
+    flex-direction: row;
+}
+
 }
